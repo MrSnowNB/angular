@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <title>My AngularJS App | interactive HTML w/o JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  </head>
+  <body>
+        <div ng-init = 'favCars=[{name:"Prius", make:"Toyota"},{name:"Corvette", make:"Chevy"},{name:"Hellcat", make:"Dodge"},{name:"Camero", make:"Chevy"},]'>
+           {codedamn AngularJS Tutoial 7 (YouTube)}<br> This is similar to a for/In loop in JS iterating through array of objects!<br>
+            <p ng-repeat = "x in favCars"> 
+                Model: {{x.name}}<br>
+                Make: {{x.make}}<br>
+            </p>
+        </div>
+  </body>
+</html>
